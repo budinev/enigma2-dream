@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-05 17:29+0200\n"
+"POT-Creation-Date: 2021-07-15 11:54+0200\n"
 "PO-Revision-Date: 2021-03-11 01:18+0200\n"
 "Last-Translator: \n"
 "Language-Team: kvinto\n"
@@ -196,7 +196,7 @@ msgstr "%a %e/%m  %-H:%M"
 
 #, python-format
 msgid "%d B"
-msgstr ""
+msgstr "%d B"
 
 #, python-format
 msgid "%d GB"
@@ -1789,6 +1789,9 @@ msgstr "Перевірка інтернет-з'єднання"
 
 msgid "Check the internet connection again"
 msgstr "Перевірити підключення до Інтернету ще раз"
+
+msgid "Checking ONID/TSID"
+msgstr "Перевірка ONID/TSID"
 
 msgid "Checking filesystem..."
 msgstr "Перевірка Файлової системи..."
@@ -3395,6 +3398,9 @@ msgstr "Введіть номер позиції в позиціонері, що
 msgid "Enter the service pin"
 msgstr "Введіть пін-код для каналу"
 
+msgid "Enter valid ONID/TSID"
+msgstr "Введіть дійсний ONID/TSID"
+
 msgid "Enter your current latitude. This is the number of degrees you are from the equator as a decimal."
 msgstr "Введіть поточну широту. Це число градусів від екватора, як десятковий дріб."
 
@@ -3676,10 +3682,10 @@ msgstr ""
 
 #, python-format
 msgid "FBC socket %s"
-msgstr ""
+msgstr "FBC роз’єм %s"
 
 msgid "FBC virtual"
-msgstr ""
+msgstr "Віртуальний FBC"
 
 msgid "FEC"
 msgstr "ФЕК"
@@ -4092,7 +4098,7 @@ msgid "Green"
 msgstr "Зелений"
 
 msgid "Greenland"
-msgstr ""
+msgstr "Гренландія"
 
 msgid "Grenada"
 msgstr ""
@@ -4316,8 +4322,8 @@ msgstr "I"
 msgid "I do not want to perform any service scans"
 msgstr "Не виконувати будь-яке сканування каналів"
 
-msgid "I55SE/H7(new model)/H9(new model)/H9COMBO/H9TWIN/H9SE/H9COMBOSE/H10"
-msgstr "I55SE/H7(нова модель)/H9(нова модель)/H9COMBO/H9TWIN/H9SE/H9COMBOSE/H10"
+msgid "I55SE/H7(new model)/H9(new model)/H9COMBO/H9TWIN/H9SE/H9COMBOSE/H10/H11"
+msgstr "I55SE/H7(нова модель)/H9(нова модель)/H9COMBO/H9TWIN/H9SE/H9COMBOSE/H10/H11"
 
 msgid "IDLE"
 msgstr ""
@@ -5880,6 +5886,9 @@ msgid "PMT PID"
 msgstr "ПІД РМТ"
 
 msgid "PPanel"
+msgstr ""
+
+msgid "PULSe 4K"
 msgstr ""
 
 msgid "Package list update"
@@ -8311,7 +8320,7 @@ msgid "Social/Political/Economics"
 msgstr "Соціальна/Політична/Економіка"
 
 msgid "SocketMMI"
-msgstr ""
+msgstr "Роз’єм MMI"
 
 msgid "SoftCam / CI"
 msgstr "Емулятор/CI"
@@ -8601,6 +8610,9 @@ msgstr "Зупинити даний стрім"
 msgid "Stop entry"
 msgstr "Зупинити запис"
 
+msgid "Stop live TV service"
+msgstr "Зупинити трансляцію ТВ каналу"
+
 msgid "Stop play TV"
 msgstr "Зупинити відтворення на ТВ"
 
@@ -8881,7 +8893,7 @@ msgstr ""
 #. TRANSLATORS: Add here whatever should be shown in the "translator" about screen, up to 6 lines (use \n for newline)
 msgid "TRANSLATOR_INFO"
 msgstr ""
-"Переклад:  kvinto - 09.06.2021\n"
+"Переклад:  kvinto - 25.07.2021\n"
 "Сторінка:    https://gisclub.tv\n"
 "                  kvinto@rambler.ru"
 
@@ -9173,6 +9185,9 @@ msgstr "Це є різнотиповий тюнер. Доступні опції
 msgid "This is the order in which DiSEqC commands are sent to the aerial system. The order must correspond exactly with the order the physical devices are arranged along the signal cable (starting from the receiver end)."
 msgstr "Це порядок передачі команд DiSEqC в систему. Порядок повинен точно відповідати порядку, коли фізичні пристрої розташовані вздовж сигнального кабелю (починаючи з кінця приймача)."
 
+msgid "This not valid ONID/TSID"
+msgstr ""
+
 msgid "This option allows to reduce the block-noise in the picture. Obviously this is at the cost of the picture's sharpness."
 msgstr "Опція служить для зниження шумів на зображенні. Це відбувається за рахунок різкості зображення."
 
@@ -9359,6 +9374,9 @@ msgstr ""
 
 msgid "This test detects your configured LAN adapter."
 msgstr "Цей тест визначить Ваш мережевий адаптер."
+
+msgid "This valid ONID/TSID"
+msgstr "Це дійсний ONID/TSID"
 
 msgid ""
 "This will (re-)calculate all positions of your rotor and may remove previously memorised positions and fine-tuning!\n"
@@ -10022,6 +10040,9 @@ msgstr "VOB файл"
 
 msgid "VU+"
 msgstr "VU+"
+
+msgid "Valid ONID/TSID look at www.lyngsat.com..."
+msgstr "Дійсний ONID/TSID можна подивитися на www.lyngsat.com..."
 
 msgid "Vanuatu"
 msgstr "Вануату"

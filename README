@@ -1,3 +1,5 @@
 To build enigma2, start reading here: https://wiki.openpli.org/Information_for_Developers
 
-This source depend on Openpli source https://github.com/OpenPLi/enigma2 (For Support DreamBox Devices)
+This source depend on Openpli source https://github.com/OpenPLi/enigma2 with some codes from (OpenATV/openvision/VIX)
+
+Support Only new DreamBox Devices (DM520/525, DM820, DM7080 and DM900/920 ... DreamOne/Two not ready yet (Audio issue))

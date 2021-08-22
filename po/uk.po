@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-02 18:51+0200\n"
+"POT-Creation-Date: 2021-08-17 23:01+0300\n"
 "PO-Revision-Date: 2021-03-11 01:18+0200\n"
 "Last-Translator: \n"
 "Language-Team: kvinto\n"
@@ -119,6 +119,20 @@ msgid " updates available."
 msgstr " доступно оновлень."
 
 #, python-format
+msgid "%(freespace)s %(percent)s free disk space"
+msgstr "%(freespace)s %(percent)s вільне місце на диску"
+
+#. TRANSLATORS: short time representation hour:minute
+#, python-format
+msgid "%(hour)2d:%(min)02d"
+msgstr ""
+
+#. TRANSLATORS: full time representation hour:minute:seconds
+#, python-format
+msgid "%(hour)2d:%(min)02d:%(sec)02d"
+msgstr ""
+
+#, python-format
 msgid "%.0f GB"
 msgstr "%.0f ГБ"
 
@@ -153,16 +167,6 @@ msgstr "%03d MБ"
 #, python-format
 msgid "%2.1f sec"
 msgstr "%2.1f сек"
-
-#. TRANSLATORS: short time representation hour:minute
-#, python-format
-msgid "%2d:%02d"
-msgstr "%2d:%02d"
-
-#. TRANSLATORS: full time representation hour:minute:seconds
-#, python-format
-msgid "%2d:%02d:%02d"
-msgstr "%2d:%02d:%02d"
 
 #, python-format
 msgid "%3.01f dB"
@@ -365,10 +369,6 @@ msgstr ""
 #, python-format
 msgid "%s %d.%d"
 msgstr "%s %d.%d"
-
-#, python-format
-msgid "%s %s free disk space"
-msgstr "%s %s вільне місце на диску"
 
 #, python-format
 msgid "%s (%s)\n"
@@ -4979,9 +4979,6 @@ msgstr "БІЛЬШЕ"
 msgid "Macao"
 msgstr "Макао"
 
-msgid "Macedonia (the former Yugoslav Republic of)"
-msgstr "Македонія (колишня Югославська Республіка)"
-
 msgid "Madagascar"
 msgstr "Мадагаскар"
 
@@ -5659,6 +5656,9 @@ msgstr "Стандартний режим"
 
 msgid "North"
 msgstr "Північ"
+
+msgid "North Macedonia (The Republic of)"
+msgstr "Північна Македонія (Республіка)"
 
 msgid "Northern Mariana Islands"
 msgstr "Північні Маріанські острови"
@@ -8893,7 +8893,7 @@ msgstr ""
 #. TRANSLATORS: Add here whatever should be shown in the "translator" about screen, up to 6 lines (use \n for newline)
 msgid "TRANSLATOR_INFO"
 msgstr ""
-"Переклад:  kvinto - 25.07.2021\n"
+"Переклад:  kvinto - 13.08.2021\n"
 "Сторінка:    https://gisclub.tv\n"
 "                  kvinto@rambler.ru"
 
@@ -9611,11 +9611,11 @@ msgstr "Усунення несправностей"
 msgid "True"
 msgstr "Вірно"
 
-msgid "Try to find used transponders in cable network.. please wait..."
-msgstr "Намагаємося знайти транспондери, використовувані в кабельній мережі.. Будь ласка, зачекайте..."
+msgid "Looking for active transponders in the cable network. Please wait..."
+msgstr "Намагаємося знайти транспондери, використовувані в кабельній мережі. Будь ласка, зачекайте..."
 
-msgid "Try to find used transponders in terrestrial network... please wait..."
-msgstr "Намагаємося знайти транспондери в наземній мережі.. Будь ласка, зачекайте..."
+msgid "Looking for active transponders in the terrestrial network. Please wait..."
+msgstr "Намагаємося знайти транспондери в наземній мережі. Будь ласка, зачекайте..."
 
 msgid "Trying to download a new packetlist. Please wait..."
 msgstr "Спроба завантажити новий список пакетів. Зачекайте..."
@@ -9991,6 +9991,14 @@ msgstr "Тип пошуку каналів"
 msgid "User - bouquets"
 msgstr "Фаворити користувача"
 
+#, python-format
+msgid "User Band %d"
+msgstr "Діапазон користувача %d"
+
+#, python-format
+msgid "User Band %d (%s)"
+msgstr "Діапазон користувача %d (%s)"
+
 msgid "User ID"
 msgstr "ID користувача"
 
@@ -10278,7 +10286,7 @@ msgstr ""
 "Дійсно вимкнути виявлення конфлікту за таймером?"
 
 msgid "Warning: FBC-C V1 tuner should be connected to the first slot to work correctly. Otherwise, only 2 out of 8 demodulators will be available when connected in the second slot. "
-msgstr ""
+msgstr "Попередження: для коректної роботи тюнер FBC-C V1 слід вставити у перший слот. В іншому випадку лише 2 з 8 декодерів будуть доступні при підключенні у другому слоті. "
 
 msgid "Warning: no LNB; using factory defaults."
 msgstr "Увага: немає конвертора; використовуються налаштування за замовчуванням."

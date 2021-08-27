@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OBH enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-17 23:01+0300\n"
+"POT-Creation-Date: 2021-08-24 01:52+0300\n"
 "PO-Revision-Date: 2019-04-12 12:36+0300\n"
 "Last-Translator: mosad - مساعد الجعيد <abo-mishal@hotmail.com>\n"
 "Language-Team: mosad - مساعد الجعيد\n"
@@ -128,16 +128,6 @@ msgstr "التحديثات المتوفرة."
 #, fuzzy, python-format
 msgid "%(freespace)s %(percent)s free disk space"
 msgstr "المساحه المتبقيه فى القرص"
-
-#. TRANSLATORS: short time representation hour:minute
-#, python-format
-msgid "%(hour)2d:%(min)02d"
-msgstr ""
-
-#. TRANSLATORS: full time representation hour:minute:seconds
-#, python-format
-msgid "%(hour)2d:%(min)02d:%(sec)02d"
-msgstr ""
 
 #, fuzzy, python-format
 msgid "%.0f GB"
@@ -435,7 +425,7 @@ msgstr[4] "التحديثات المتوفرة."
 msgstr[5] "التحديثات المتوفرة."
 
 #, python-format
-msgid "%s%% Autoinstalling %s"
+msgid "Autoinstalling %s"
 msgstr ""
 
 #, fuzzy, python-format
@@ -1157,9 +1147,10 @@ msgstr "هل تريد بالتاكيد أزاله كافة باقات المست
 msgid "Are you sure to reboot to"
 msgstr "هل تريد بالتاكيد أزاله هذا الإدخال ؟"
 
+#. TRANSLATORS: The user is asked to delete all satellite services from a specific orbital position after a configuration change
 #, fuzzy, python-format
-msgid "Are you sure to remove all %d.%d%s%s services?"
-msgstr "هل أنت متأكد من أنك تريد إزالة جميع %d.%d%s%s القنوات؟"
+msgid "Are you sure to remove all %s services?"
+msgstr "هل أنت متأكد من أنك تريد إزالة جميع %s القنوات؟"
 
 #, fuzzy
 msgid "Are you sure to remove all cable services?"
@@ -3029,7 +3020,7 @@ msgid "Directory browser"
 msgstr "تصفح الدليل"
 
 #, fuzzy, python-format
-msgid "Directory contains %s and %s."
+msgid "Directory contains %(file)s and %(subdir)s."
 msgstr "المجلد %s غير موجود."
 
 msgid "Disable"
@@ -4234,6 +4225,10 @@ msgid "G"
 msgstr "ج/ب"
 
 #, fuzzy
+msgid "GB"
+msgstr "أحمر أخضر أزرق"
+
+#, fuzzy
 msgid "GUI Settings"
 msgstr "إعدادات إعادة تشغيل واجهة المستخدم"
 
@@ -5307,6 +5302,12 @@ msgstr "أضغط الزر مطولا"
 msgid "Longitude"
 msgstr "خط الطول"
 
+msgid "Looking for active transponders in the cable network. Please wait..."
+msgstr "إعادة محاولة إيجاد ترددات تعمل فى كيبل الشبكة .الرجاء الانتظار..."
+
+msgid "Looking for active transponders in the terrestrial network. Please wait..."
+msgstr "إعادة محاولة لا يجاد الترددات المستخدمة في الشبكة الأرضي .الرجاء الانتظار..."
+
 msgid "Loop through from"
 msgstr "عمل ربط مع المؤالف الثاني"
 
@@ -5318,6 +5319,10 @@ msgstr "لوكسمبورغ"
 
 msgid "Luxembourgish"
 msgstr "لوكسونبورج"
+
+#, fuzzy
+msgid "MB"
+msgstr "B"
 
 #, fuzzy
 msgid "MMC card"
@@ -6072,8 +6077,8 @@ msgid "Not defined"
 msgstr "غير معرف"
 
 #, python-format
-msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
-msgstr "مساحة غير كافيه في القرص الصلب. الرجاء تحرير بعض المساحة على القرص وحاول مرة أخرى. (%d مطلوب بالميقابايت, %d ميقابايت متوفرة)"
+msgid "Not enough disk space. Please free up some disk space and try again. (%(req)d MB required, %(avail)d MB available)"
+msgstr "مساحة غير كافيه في القرص الصلب. الرجاء تحرير بعض المساحة على القرص وحاول مرة أخرى. (%(req)d مطلوب بالميقابايت, %(avail)d ميقابايت متوفرة)"
 
 #, fuzzy
 msgid "Not tested:"
@@ -8057,6 +8062,10 @@ msgstr "حدد كيفية إعداد طبق القمر الصناعي. على س
 
 msgid "Select how you want your receiver to keep the correct time, either from the DVB transponder, or from the internet using NTP. Or use Auto, which will favour using NTP, but will fall back to transponder time when no internet connection is available."
 msgstr ""
+
+#, fuzzy
+msgid "Select image"
+msgstr "حذف المؤقت"
 
 msgid "Select input device"
 msgstr "إختيار الجهاز المدخل"
@@ -10295,12 +10304,6 @@ msgstr ""
 
 msgid "True"
 msgstr ""
-
-msgid "Looking for active transponders in the cable network. Please wait..."
-msgstr "إعادة محاولة إيجاد ترددات تعمل فى كيبل الشبكة .الرجاء الانتظار..."
-
-msgid "Looking for active transponders in the terrestrial network. Please wait..."
-msgstr "إعادة محاولة لا يجاد الترددات المستخدمة في الشبكة الأرضي .الرجاء الانتظار..."
 
 msgid "Trying to download a new packetlist. Please wait..."
 msgstr "إعادة محاولة تحميل قائمة حزم جديدة. الرجاء الانتظار ..."

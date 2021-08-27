@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-17 23:01+0300\n"
+"POT-Creation-Date: 2021-08-24 01:52+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: ims <ims21@users.sourceforge.net>\n"
 "Language-Team: PLi <ims@openpli.org>\n"
@@ -133,16 +133,6 @@ msgstr " dostupných aktualizací."
 #, python-format
 msgid "%(freespace)s %(percent)s free disk space"
 msgstr "%(freespace)s %(percent)s volného místa"
-
-#. TRANSLATORS: short time representation hour:minute
-#, python-format
-msgid "%(hour)2d:%(min)02d"
-msgstr ""
-
-#. TRANSLATORS: full time representation hour:minute:seconds
-#, python-format
-msgid "%(hour)2d:%(min)02d:%(sec)02d"
-msgstr ""
 
 #, python-format
 msgid "%.0f GB"
@@ -415,8 +405,8 @@ msgstr[2] " %s dostupných aktualizací"
 
 #
 #, python-format
-msgid "%s%% Autoinstalling %s"
-msgstr "%s%% - Automatická instalace - %s"
+msgid "Autoinstalling %s"
+msgstr "Automatická instalace - %s"
 
 #, python-format
 msgid "%s%d min"
@@ -1214,9 +1204,10 @@ msgstr "Opravdu chcete odstranit všechny smazané přehledy?"
 msgid "Are you sure to reboot to"
 msgstr "Opravdu chcete restartovat do"
 
+#. TRANSLATORS: The user is asked to delete all satellite services from a specific orbital position after a configuration change
 #, python-format
-msgid "Are you sure to remove all %d.%d%s%s services?"
-msgstr "Opravdu smazat všechny %d.%d%s%s programy?"
+msgid "Are you sure to remove all %s services?"
+msgstr "Opravdu smazat všechny %s programy?"
 
 msgid "Are you sure to remove all cable services?"
 msgstr "Opravdu smazat všechny programy kabelové televize?"
@@ -3228,8 +3219,8 @@ msgid "Directory browser"
 msgstr "Prohlížeč adresářů"
 
 #, python-format
-msgid "Directory contains %s and %s."
-msgstr "Adresář obsahuje %s a %s."
+msgid "Directory contains %(file)s and %(subdir)s."
+msgstr "Adresář obsahuje %(file)s a %(subdir)s."
 
 #
 msgid "Disable"
@@ -4526,6 +4517,10 @@ msgid "G"
 msgstr "G"
 
 #
+msgid "GB"
+msgstr "GB"
+
+#
 msgid "GUI Settings"
 msgstr "Grafické rozhraní"
 
@@ -5665,6 +5660,13 @@ msgstr "Dlouhé stlačení klávesy"
 msgid "Longitude"
 msgstr "Zeměpisná délka"
 
+#
+msgid "Looking for active transponders in the cable network. Please wait..."
+msgstr "Zkouším najít použité transpondéry v kabelové síti. Prosím, čekejte..."
+
+msgid "Looking for active transponders in the terrestrial network. Please wait..."
+msgstr "Hledají se použité transpondéry v pozemní síti. Prosím, čekejte..."
+
 msgid "Loop through from"
 msgstr "Průchozí smyčka z"
 
@@ -5676,6 +5678,10 @@ msgstr "Lucembursko"
 
 msgid "Luxembourgish"
 msgstr "Lucembursky"
+
+#
+msgid "MB"
+msgstr "MB"
 
 #
 msgid "MMC card"
@@ -6508,8 +6514,8 @@ msgstr "Nedefinován"
 
 #
 #, python-format
-msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
-msgstr "Nedostatek místa na disku. Uvolněte prostor na disku a zkuste znovu. (%d MB požadováno, %d MB k dispozici)"
+msgid "Not enough disk space. Please free up some disk space and try again. (%(req)d MB required, %(avail)d MB available)"
+msgstr "Nedostatek místa na disku. Uvolněte prostor na disku a zkuste znovu. (%(req)d MB požadováno, %(avail)d MB k dispozici)"
 
 msgid "Not tested:"
 msgstr "Netestováno:"
@@ -8670,6 +8676,9 @@ msgstr "Vyberte jak je nastavena parabola. Např. jeden LNB, přepínač DiSEqC,
 msgid "Select how you want your receiver to keep the correct time, either from the DVB transponder, or from the internet using NTP. Or use Auto, which will favour using NTP, but will fall back to transponder time when no internet connection is available."
 msgstr "Vyberte způsob udržování správného času přijímače. Můžete použít čas z DVB transpondéru nebo čas z internetu (NTP server). Při použití 'Automaticky' bude upřednostněno používání NTP serveru, ale v případě neexistujícího připojení k internetu se použije čas transpondéru."
 
+msgid "Select image"
+msgstr "Výběr image"
+
 msgid "Select input device"
 msgstr "Vyberte vstupní zařízení"
 
@@ -10243,7 +10252,7 @@ msgstr ""
 "Pro případné korekce můžete kontaktovat autora\n"
 "na výše uvedené adrese.\n"
 "\n"
-"®13.8.2021"
+"®24. 8. 2021"
 
 #
 msgid "TS file is too large for ISO9660 level 1!"
@@ -11036,13 +11045,6 @@ msgstr "Řešení problémů"
 
 msgid "True"
 msgstr "Ano"
-
-#
-msgid "Looking for active transponders in the cable network. Please wait..."
-msgstr "Zkouším najít použité transpondéry v kabelové síti. Prosím, čekejte..."
-
-msgid "Looking for active transponders in the terrestrial network. Please wait..."
-msgstr "Hledají se použité transpondéry v pozemní síti. Prosím, čekejte..."
 
 #
 msgid "Trying to download a new packetlist. Please wait..."

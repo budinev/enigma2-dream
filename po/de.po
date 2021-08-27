@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-17 23:01+0300\n"
+"POT-Creation-Date: 2021-08-24 01:52+0300\n"
 "PO-Revision-Date: 2021-04-30 16:06+0200\n"
 "Last-Translator: kueken\n"
 "Language-Team: OpenPLi\n"
@@ -123,16 +123,6 @@ msgstr " Aktualisierungen verfügbar."
 #, python-format
 msgid "%(freespace)s %(percent)s free disk space"
 msgstr "%(freespace)s %(percent)s freier Festplattenspeicher"
-
-#. TRANSLATORS: short time representation hour:minute
-#, python-format
-msgid "%(hour)2d:%(min)02d"
-msgstr ""
-
-#. TRANSLATORS: full time representation hour:minute:seconds
-#, python-format
-msgid "%(hour)2d:%(min)02d:%(sec)02d"
-msgstr ""
 
 #, python-format
 msgid "%.0f GB"
@@ -381,8 +371,8 @@ msgstr[0] "%s Aktualisierung verfügbar"
 msgstr[1] "%s Aktualisierungen verfügbar"
 
 #, python-format
-msgid "%s%% Autoinstalling %s"
-msgstr "%s%% Automatische Installation %s"
+msgid "Autoinstalling %s"
+msgstr "Automatische Installation %s"
 
 #, python-format
 msgid "%s%d min"
@@ -1061,9 +1051,10 @@ msgstr "Sind Sie sicher, alle gelöschten Userbouquets zu entfernen?"
 msgid "Are you sure to reboot to"
 msgstr "Sind Sie sicher neuzustarten zu"
 
+#. TRANSLATORS: The user is asked to delete all satellite services from a specific orbital position after a configuration change
 #, python-format
-msgid "Are you sure to remove all %d.%d%s%s services?"
-msgstr "Sind Sie sicher, dass %d.%d%s%s entfernt werden soll?"
+msgid "Are you sure to remove all %s services?"
+msgstr "Sind Sie sicher, dass %s entfernt werden soll?"
 
 msgid "Are you sure to remove all cable services?"
 msgstr "Sind Sie sicher, dass alle Kabel-Dienste entfernt werden sollen?"
@@ -2823,8 +2814,8 @@ msgid "Directory browser"
 msgstr "Verzeichnis Browser"
 
 #, python-format
-msgid "Directory contains %s and %s."
-msgstr "Das Verzeichnis enthält %s und %s."
+msgid "Directory contains %(file)s and %(subdir)s."
+msgstr "Das Verzeichnis enthält %(file)s und %(subdir)s."
 
 msgid "Disable"
 msgstr "Aus"
@@ -3946,6 +3937,10 @@ msgstr "Weitere Optionen"
 msgid "G"
 msgstr "G"
 
+#, fuzzy
+msgid "GB"
+msgstr "RGB"
+
 msgid "GUI Settings"
 msgstr "GUI-Einstellungen"
 
@@ -4949,6 +4944,12 @@ msgstr "langer Tastendruck"
 msgid "Longitude"
 msgstr "Längengrad"
 
+msgid "Looking for active transponders in the cable network. Please wait..."
+msgstr "Suche benutzte Transponder im Kabel Netzwerk. Bitte warten…"
+
+msgid "Looking for active transponders in the terrestrial network. Please wait..."
+msgstr "Suche benutzte Transponder im terrestrischen Netzwerk. Bitte warten…"
+
 msgid "Loop through from"
 msgstr "Verbunden mit"
 
@@ -4960,6 +4961,10 @@ msgstr "Luxemburg"
 
 msgid "Luxembourgish"
 msgstr "Luxemburgisch"
+
+#, fuzzy
+msgid "MB"
+msgstr "B"
 
 msgid "MMC card"
 msgstr "MMC-Karte"
@@ -5672,8 +5677,8 @@ msgid "Not defined"
 msgstr "Nicht definiert"
 
 #, python-format
-msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
-msgstr "Nicht genügend freier Speicherplatz. Bitte löschen Sie nicht mehr benötigte Dateien und versuchen es erneut. (%d MB benötigt, %d MB verfügbar)"
+msgid "Not enough disk space. Please free up some disk space and try again. (%(req)d MB required, %(avail)d MB available)"
+msgstr "Nicht genügend freier Speicherplatz. Bitte löschen Sie nicht mehr benötigte Dateien und versuchen es erneut. (%(req)d MB benötigt, %(avail)d MB verfügbar)"
 
 msgid "Not tested:"
 msgstr "Nicht getestet:"
@@ -7514,6 +7519,10 @@ msgstr "Wählen Sie, wie die Satellitenschüssel eingerichtet wird. d.h. feste S
 
 msgid "Select how you want your receiver to keep the correct time, either from the DVB transponder, or from the internet using NTP. Or use Auto, which will favour using NTP, but will fall back to transponder time when no internet connection is available."
 msgstr "Wähle die bevorzugte Zeitsynchronisation. Transponder ->DVB, Internet->NTP oder \"Auto\". Auswahl \"Auto\" favorisiert NTP und nutzt automatisch den Transponder falls kein Internet vorhanden ist."
+
+#, fuzzy
+msgid "Select image"
+msgstr "Lösche Image"
 
 msgid "Select input device"
 msgstr "Eingabegerät auswählen."
@@ -9611,12 +9620,6 @@ msgstr "Fehlersuche"
 
 msgid "True"
 msgstr "Richtig"
-
-msgid "Looking for active transponders in the cable network. Please wait..."
-msgstr "Suche benutzte Transponder im Kabel Netzwerk. Bitte warten…"
-
-msgid "Looking for active transponders in the terrestrial network. Please wait..."
-msgstr "Suche benutzte Transponder im terrestrischen Netzwerk. Bitte warten…"
 
 msgid "Trying to download a new packetlist. Please wait..."
 msgstr "Versuche eine neue Aktualisierungsliste herunterzuladen. Bitte warten Sie…"

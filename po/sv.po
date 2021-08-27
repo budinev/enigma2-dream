@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-17 23:01+0300\n"
+"POT-Creation-Date: 2021-08-24 01:52+0300\n"
 "PO-Revision-Date: 2017-03-05 13:24+0100\n"
 "Last-Translator: Magnus Nilsson <mag_nilsson@hotmail.com>\n"
 "Language-Team: \n"
@@ -132,16 +132,6 @@ msgstr " uppdateringar tillgängliga."
 #, python-format
 msgid "%(freespace)s %(percent)s free disk space"
 msgstr "%(freespace)s %(percent)s ledigt diskutrymme"
-
-#. TRANSLATORS: short time representation hour:minute
-#, python-format
-msgid "%(hour)2d:%(min)02d"
-msgstr ""
-
-#. TRANSLATORS: full time representation hour:minute:seconds
-#, python-format
-msgid "%(hour)2d:%(min)02d:%(sec)02d"
-msgstr ""
 
 #, python-format
 msgid "%.0f GB"
@@ -389,7 +379,7 @@ msgstr[1] "%s uppdateringar tillgängliga."
 
 #
 #, fuzzy, python-format
-msgid "%s%% Autoinstalling %s"
+msgid "Autoinstalling %s"
 msgstr "Installerar"
 
 #, python-format
@@ -1186,9 +1176,10 @@ msgstr "Är du säker på att rensa bort alla raderade favoritlistor?"
 msgid "Are you sure to reboot to"
 msgstr "Är du säker på att ta bort denna posten?"
 
+#. TRANSLATORS: The user is asked to delete all satellite services from a specific orbital position after a configuration change
 #, python-format
-msgid "Are you sure to remove all %d.%d%s%s services?"
-msgstr "Är du säker på att ta bort alla %d.%d%s%s kanaler?"
+msgid "Are you sure to remove all %s services?"
+msgstr "Är du säker på att ta bort alla %s kanaler?"
 
 msgid "Are you sure to remove all cable services?"
 msgstr "Är du säker på att ta bort alla kabel-tv kanaler?"
@@ -3188,8 +3179,8 @@ msgid "Directory browser"
 msgstr "Biblioteksbläddrare"
 
 #, python-format
-msgid "Directory contains %s and %s."
-msgstr "Katalogen innehåller %s och %s."
+msgid "Directory contains %(file)s and %(subdir)s."
+msgstr "Katalogen innehåller %(file)s och %(subdir)s."
 
 #
 msgid "Disable"
@@ -4474,6 +4465,11 @@ msgstr ""
 
 #
 #, fuzzy
+msgid "GB"
+msgstr "RGB"
+
+#
+#, fuzzy
 msgid "GUI Settings"
 msgstr "Inställningar"
 
@@ -5614,6 +5610,13 @@ msgstr "Lång knapptryckning"
 msgid "Longitude"
 msgstr "Longitud"
 
+#
+msgid "Looking for active transponders in the cable network. Please wait..."
+msgstr "Försöker hitta använda transponders i kabelnätet. Vänligen vänta..."
+
+msgid "Looking for active transponders in the terrestrial network. Please wait..."
+msgstr "Försöker hitta använda transponders i marknätet. Vänligen vänta..."
+
 msgid "Loop through from"
 msgstr "Loop through från"
 
@@ -5626,6 +5629,11 @@ msgstr "Luxemburgiska"
 
 msgid "Luxembourgish"
 msgstr "Luxemburgiska"
+
+#
+#, fuzzy
+msgid "MB"
+msgstr "B"
 
 #
 msgid "MMC card"
@@ -6458,8 +6466,8 @@ msgstr "Inte definerad"
 
 #
 #, python-format
-msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
-msgstr "Inte tillräckligt med diskutrymme. Vänligen frigör diskutrymme och försök igen. (%d MB krävs, %d MB tillgängligt)"
+msgid "Not enough disk space. Please free up some disk space and try again. (%(req)d MB required, %(avail)d MB available)"
+msgstr "Inte tillräckligt med diskutrymme. Vänligen frigör diskutrymme och försök igen. (%(req)d MB krävs, %(avail)d MB tillgängligt)"
 
 msgid "Not tested:"
 msgstr "Inte testad :"
@@ -8608,6 +8616,10 @@ msgstr ""
 
 msgid "Select how you want your receiver to keep the correct time, either from the DVB transponder, or from the internet using NTP. Or use Auto, which will favour using NTP, but will fall back to transponder time when no internet connection is available."
 msgstr ""
+
+#, fuzzy
+msgid "Select image"
+msgstr "Radera timer"
 
 msgid "Select input device"
 msgstr "Välj inmatningsenhet"
@@ -11009,13 +11021,6 @@ msgstr "Felsök"
 
 msgid "True"
 msgstr ""
-
-#
-msgid "Looking for active transponders in the cable network. Please wait..."
-msgstr "Försöker hitta använda transponders i kabelnätet. Vänligen vänta..."
-
-msgid "Looking for active transponders in the terrestrial network. Please wait..."
-msgstr "Försöker hitta använda transponders i marknätet. Vänligen vänta..."
 
 #
 msgid "Trying to download a new packetlist. Please wait..."

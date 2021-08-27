@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-17 23:01+0300\n"
+"POT-Creation-Date: 2021-08-24 01:52+0300\n"
 "PO-Revision-Date: 2021-05-24 17:48+0300\n"
 "Last-Translator: Dimitrij <Dima-73@inbox.lv>\n"
 "Language-Team: openPLi Dimitrij\n"
@@ -121,16 +121,6 @@ msgstr " доступных обновлений."
 #, python-format
 msgid "%(freespace)s %(percent)s free disk space"
 msgstr "%(freespace)s %(percent)s свободное место на диске"
-
-#. TRANSLATORS: short time representation hour:minute
-#, python-format
-msgid "%(hour)2d:%(min)02d"
-msgstr ""
-
-#. TRANSLATORS: full time representation hour:minute:seconds
-#, python-format
-msgid "%(hour)2d:%(min)02d:%(sec)02d"
-msgstr ""
 
 #, python-format
 msgid "%.0f GB"
@@ -391,8 +381,8 @@ msgstr[1] "%s обновленных пакета доступно"
 msgstr[2] "%s обновленных пакетов доступно"
 
 #, python-format
-msgid "%s%% Autoinstalling %s"
-msgstr "%s%% Авто инсталляция %s"
+msgid "Autoinstalling %s"
+msgstr "Авто инсталляция %s"
 
 #, python-format
 msgid "%s%d min"
@@ -1071,9 +1061,10 @@ msgstr "Вы действительно хотите очистить все у�
 msgid "Are you sure to reboot to"
 msgstr "Вы действительно хотите выполнить перезагрузку ресивера?"
 
+#. TRANSLATORS: The user is asked to delete all satellite services from a specific orbital position after a configuration change
 #, python-format
-msgid "Are you sure to remove all %d.%d%s%s services?"
-msgstr "Вы действительно хотите удалить все сервисы %d.%d%s%s?"
+msgid "Are you sure to remove all %s services?"
+msgstr "Вы действительно хотите удалить все сервисы %s?"
 
 msgid "Are you sure to remove all cable services?"
 msgstr "Вы действительно хотите удалить все кабельные сервисы?"
@@ -2829,8 +2820,8 @@ msgid "Directory browser"
 msgstr "Директория браузера"
 
 #, python-format
-msgid "Directory contains %s and %s."
-msgstr " Директория содержит %s и %s."
+msgid "Directory contains %(file)s and %(subdir)s."
+msgstr " Директория содержит %(file)s и %(subdir)s."
 
 msgid "Disable"
 msgstr "Отключить"
@@ -3954,6 +3945,9 @@ msgstr "Дополнительные опции"
 msgid "G"
 msgstr "G"
 
+msgid "GB"
+msgstr "GB"
+
 msgid "GUI Settings"
 msgstr "Настройки GUI"
 
@@ -4325,7 +4319,7 @@ msgid "I55SE/H7(new model)/H9(new model)/H9COMBO/H9TWIN/H9SE/H9COMBOSE/H10/H11"
 msgstr "I55SE/H7(новая модель)/H9(новая модель)/H9COMBO/H9TWIN/H9SE/H9COMBOSE/H10/H11"
 
 msgid "IDLE"
-msgstr "БЕЗДЕЙСТВИЕ"
+msgstr "ОЖИДАНИЕ"
 
 msgid "INFO"
 msgstr "INFO"
@@ -4957,6 +4951,12 @@ msgstr "Длительное нажатие"
 msgid "Longitude"
 msgstr "Долгота"
 
+msgid "Looking for active transponders in the cable network. Please wait..."
+msgstr "Пытаемся найти транспондеры, используемые в кабельной сети. Пожалуйста, подождите..."
+
+msgid "Looking for active transponders in the terrestrial network. Please wait..."
+msgstr "Пытаемся найти транспондеры, используемые в наземной сети. Пожалуйста, подождите..."
+
 msgid "Loop through from"
 msgstr "Петлевой вход от"
 
@@ -4968,6 +4968,9 @@ msgstr "Luxembourg"
 
 msgid "Luxembourgish"
 msgstr "Люксембургский"
+
+msgid "MB"
+msgstr "MB"
 
 msgid "MMC card"
 msgstr "MMC карта"
@@ -5678,8 +5681,8 @@ msgid "Not defined"
 msgstr "Не определено"
 
 #, python-format
-msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
-msgstr "Нет места на диске. Пожалуйста, освободите немного места на диске и попробуйте снова. (%d MB требуется, %d MB доступно)"
+msgid "Not enough disk space. Please free up some disk space and try again. (%(req)d MB required, %(avail)d MB available)"
+msgstr "Нет места на диске. Пожалуйста, освободите немного места на диске и попробуйте снова. (%(req)d MB требуется, %(avail)d MB доступно)"
 
 msgid "Not tested:"
 msgstr "Без теста:"
@@ -7524,6 +7527,9 @@ msgstr "Выбор способ настройки спутниковой ант
 msgid "Select how you want your receiver to keep the correct time, either from the DVB transponder, or from the internet using NTP. Or use Auto, which will favour using NTP, but will fall back to transponder time when no internet connection is available."
 msgstr "Выбор сохранения/настройки правильного времени Вашего ресивера, либо с DVB транспондера, либо из интернета с использованием NTP. Или используйте Auto, что предпочтительней использовать NTP, но будет возвращаться к времени транспондера, когда нет подключения к интернету."
 
+msgid "Select image"
+msgstr "Выбор имиджа"
+
 msgid "Select input device"
 msgstr "Выберите устройства ввода"
 
@@ -8895,7 +8901,7 @@ msgstr "TEXT"
 
 #. TRANSLATORS: Add here whatever should be shown in the "translator" about screen, up to 6 lines (use \n for newline)
 msgid "TRANSLATOR_INFO"
-msgstr "Dimitrij - 24.05.2021"
+msgstr "Dimitrij - 26.08.2021"
 
 msgid "TS file is too large for ISO9660 level 1!"
 msgstr "TS файл слишком большой для ISO9660 level 1!"
@@ -8907,7 +8913,7 @@ msgid "TUNER:"
 msgstr "ТЮНЕР:"
 
 msgid "TUNING"
-msgstr "ЗАХВАТ"
+msgstr "НАСТРОЙКА СИГНАЛА"
 
 msgid "TV physical address report"
 msgstr "Оповещение физического адреса ТВ"
@@ -9608,12 +9614,6 @@ msgstr "Решение проблем (просмотр)"
 
 msgid "True"
 msgstr "да"
-
-msgid "Looking for active transponders in the cable network. Please wait..."
-msgstr "Пытаемся найти транспондеры, используемые в кабельной сети. Пожалуйста, подождите..."
-
-msgid "Looking for active transponders in the terrestrial network. Please wait..."
-msgstr "Пытаемся найти транспондеры, используемые в наземной сети. Пожалуйста, подождите..."
 
 msgid "Trying to download a new packetlist. Please wait..."
 msgstr "Пытаемся загрузить новый список пакетов. Пожалуйста, подождите..."

@@ -204,6 +204,21 @@ def InitUsageConfig():
 		("intermediate", _("Advanced")),
 		("expert", _("Expert"))])
 
+	config.usage.helpSortOrder = ConfigSelection(default="headings+alphabetic", choices=[
+		("headings+alphabetic", _("Alphabetical under headings")),
+		("flat+alphabetic", _("Flat alphabetical")),
+		("flat+remotepos", _("Flat by position on remote")),
+		("flat+remotegroups", _("Flat by key group on remote"))
+	])
+
+	config.usage.helpAnimationSpeed = ConfigSelection(default="10", choices=[
+		("1", _("Very fast")),
+		("5", _("Fast")),
+		("10", _("Default")),
+		("20", _("Slow")),
+		("50", _("Very slow"))
+	])
+
 	config.usage.startup_to_standby = ConfigSelection(default="no", choices=[
 		("no", _("no")),
 		("yes", _("yes")),
@@ -1210,7 +1225,7 @@ def InitUsageConfig():
 	config.autolanguage = ConfigSubsection()
 	audio_language_choices = [
 		("", _("None")),
-		("orj dos ory org esl qaa und mis mul ORY ORJ Audio_ORJ", _("Original")),
+		("orj dos ory org esl qaa und mis mul ORY ORJ Audio_ORJ oth", _("Original")),
 		("ara", _("Arabic")),
 		("eus baq", _("Basque")),
 		("bul", _("Bulgarian")),
@@ -1220,7 +1235,7 @@ def InitUsageConfig():
 		("ces cze", _("Czech")),
 		("dan", _("Danish")),
 		("dut ndl nld", _("Dutch")),
-		("eng qaa", _("English")),
+		("eng", _("English")),
 		("est", _("Estonian")),
 		("fin", _("Finnish")),
 		("fra fre", _("French")),
@@ -1246,7 +1261,8 @@ def InitUsageConfig():
 		("swe", _("Swedish")),
 		("tha", _("Thai")),
 		("tur Audio_TUR", _("Turkish")),
-		("ukr Ukr", _("Ukrainian"))]
+		("ukr Ukr", _("Ukrainian")),
+		("NAR qad", _("Visual impaired commentary"))]
 
 	epg_language_choices = audio_language_choices[:1] + audio_language_choices[2:]
 

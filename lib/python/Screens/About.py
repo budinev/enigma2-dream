@@ -8,6 +8,7 @@ from Components.NimManager import nimmanager
 from Components.About import about
 from Components.ScrollLabel import ScrollLabel
 from Components.Button import Button
+from Components.SystemInfo import SystemInfo
 
 from Components.Label import Label
 from Components.ProgressBar import ProgressBar
@@ -53,16 +54,20 @@ class About(Screen):
 
 		AboutText += _("DVB driver version: ") + about.getDriverInstalledDate() + "\n"
 
-		GStreamerVersion = _("Media player: GStreamer, version ") + about.getGStreamerVersionString().replace("GStreamer", "")
-		self["GStreamerVersion"] = StaticText(GStreamerVersion)
+		#GStreamerVersion = _("Media player: GStreamer, version ") + about.getGStreamerVersionString().replace("GStreamer", "")
+		#self["GStreamerVersion"] = StaticText(GStreamerVersion)
+		AboutText += _("GStreamer version: ") + about.getGStreamerVersionString() + "\n"
 
-		ffmpegVersion = _("Media player: ffmpeg, version ") + about.getffmpegVersionString()
-		self["ffmpegVersion"] = StaticText(ffmpegVersion)
+		#ffmpegVersion = _("Media player: ffmpeg, version ") + about.getffmpegVersionString()
+		#self["ffmpegVersion"] = StaticText(ffmpegVersion)
+		AboutText += _("FFmpeg version: ") + about.getffmpegVersionString() + "\n"
 
-		if cpu.upper().startswith('HI') or os.path.isdir('/proc/hisi'):
-			AboutText += ffmpegVersion + "\n"
-		else:
-			AboutText += GStreamerVersion + "\n"
+		#if cpu.upper().startswith('HI') or os.path.isdir('/proc/hisi'):
+		#	AboutText += ffmpegVersion + "\n"
+		#else:
+		#	AboutText += GStreamerVersion + "\n"
+
+		AboutText += _("OpenSSL version: ") + about.getOpenSSLVersion() + "\n"
 
 		AboutText += _("Python version: ") + about.getPythonVersionString() + "\n"
 
@@ -113,8 +118,9 @@ class About(Screen):
 		AboutText += hddinfo + "\n\n" + _("Network Info:")
 		for x in about.GetIPsFromNetworkInterfaces():
 			AboutText += "\n" + x[0] + ": " + x[1]
-		if config.hdmicec.enabled.value:
-			AboutText += "\n\n" + _("HDMI-CEC address") + ": " + config.hdmicec.fixed_physical_address.value
+		if SystemInfo["HasHDMI-CEC"] and config.hdmicec.enabled.value:
+			address = config.hdmicec.fixed_physical_address.value if config.hdmicec.fixed_physical_address.value != "0.0.0.0" else _("not set")
+			AboutText += "\n\n" + _("HDMI-CEC address") + ": " + address
 
 		self["AboutScrollLabel"] = ScrollLabel(AboutText)
 		self["key_green"] = Button(_("Translations"))

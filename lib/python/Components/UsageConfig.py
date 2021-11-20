@@ -13,13 +13,29 @@ from boxbranding import getDisplayType
 
 displaytype = getDisplayType()
 
+originalAudioTracks = "orj dos ory org esl qaa und mis mul ORY ORJ Audio_ORJ oth"
+visuallyImpairedCommentary = "NAR qad"
+
 
 def InitUsageConfig():
 	config.usage = ConfigSubsection()
-	if fileHas("/etc/network/interfaces","iface eth0 inet static") and not fileHas("/etc/network/interfaces","iface wlan0 inet dhcp") or fileHas("/etc/network/interfaces","iface wlan0 inet static") and fileHas("/run/ifstate","wlan0=wlan0"):
-		config.usage.dns = ConfigSelection(default = "custom", choices = [("custom", _("Static IP or Custom")), ("google", _("Google DNS")), ("cloadflare", _("Cloadfare")), ("opendns-familyshield", _("OpenDNS FamilyShield")), ("opendns-home", _("OpenDNS Home"))])
+	if fileContains("/etc/network/interfaces", "iface eth0 inet static") and not fileContains("/etc/network/interfaces", "iface wlan0 inet dhcp") or fileContains("/etc/network/interfaces", "iface wlan0 inet static") and fileContains("/run/ifstate", "wlan0=wlan0"):
+		config.usage.dns = ConfigSelection(default="custom", choices=[
+			("custom", _("Static IP or Custom")),
+			("google", _("Google DNS")),
+			("cloudflare", _("Cloudflare")),
+			("opendns-familyshield", _("OpenDNS FamilyShield")),
+			("opendns-home", _("OpenDNS Home"))
+		])
 	else:
-		config.usage.dns = ConfigSelection(default = "dhcp-router", choices = [("dhcp-router", _("DHCP router")), ("custom", _("Static IP or Custom")), ("google", _("Google DNS")), ("cloadflare", _("Cloadfare")), ("opendns-familyshield", _("OpenDNS FamilyShield")), ("opendns-home", _("OpenDNS Home"))])
+		config.usage.dns = ConfigSelection(default="dhcp-router", choices=[
+			("dhcp-router", _("DHCP Router")),
+			("custom", _("Static IP or Custom")),
+			("google", _("Google DNS")),
+			("cloudflare", _("Cloudflare")),
+			("opendns-familyshield", _("OpenDNS FamilyShield")),
+			("opendns-home", _("OpenDNS Home"))
+		])
 	config.usage.subnetwork = ConfigYesNo(default=True)
 	config.usage.subnetwork_cable = ConfigYesNo(default=True)
 	config.usage.subnetwork_terrestrial = ConfigYesNo(default=True)
@@ -1225,7 +1241,7 @@ def InitUsageConfig():
 	config.autolanguage = ConfigSubsection()
 	audio_language_choices = [
 		("", _("None")),
-		("orj dos ory org esl qaa und mis mul ORY ORJ Audio_ORJ oth", _("Original")),
+		(originalAudioTracks, _("Original")),
 		("ara", _("Arabic")),
 		("eus baq", _("Basque")),
 		("bul", _("Bulgarian")),
@@ -1262,7 +1278,7 @@ def InitUsageConfig():
 		("tha", _("Thai")),
 		("tur Audio_TUR", _("Turkish")),
 		("ukr Ukr", _("Ukrainian")),
-		("NAR qad", _("Visual impaired commentary"))]
+		(visuallyImpairedCommentary, _("Audio description for the visually impaired"))]
 
 	epg_language_choices = audio_language_choices[:1] + audio_language_choices[2:]
 

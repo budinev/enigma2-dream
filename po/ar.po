@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-15 22:30+0300\n"
 "POT-Creation-Date: 2022-02-07 15:38+0100\n"
+"PO-Revision-Date: 2021-11-26 14:55+0300\n"
 "Last-Translator: RAED - Fairbirb <rrrr53@hotmail.com>\n"
 "Language-Team: \n"
 "Language: ar\n"
@@ -1391,7 +1391,7 @@ msgstr "بحث عن قنوات الكيبل"
 
 #, python-format
 msgid "Cable scan executable utility not found '%s'!"
-msgstr ""
+msgstr "! '%s' لم يتم العثور على الأداة المساعدة القابلة للتنفيذ لفحص الكبل"
 
 msgid "Cabo Verde"
 msgstr "كابو فيردي"
@@ -1622,8 +1622,8 @@ msgid "Checking tuner %s\n"
 msgstr "التحقق من المؤالف %s\n"
 "منفذ الدايزك %s إلى %s"
 
-msgid "Children/Youth"
-msgstr "الأطفال/الشباب"
+msgid "Children/Youth/Education/Science"
+msgstr "التعليم/العلوم/الوقائع"
 
 msgid "Chile"
 msgstr "تشيلي"
@@ -2863,6 +2863,9 @@ msgstr "تحميل الإضافة"
 msgid "Downloadable plugins"
 msgstr "تحميل الإضافة"
 
+msgid "Downloaded Images"
+msgstr "جاري التحميل"
+
 msgid "Downloading"
 msgstr "جاري التحميل"
 
@@ -2871,6 +2874,9 @@ msgstr "جاري التحميل"
 
 msgid "Downloading plugin information. Please wait..."
 msgstr "جاري تحميل معلومات عن الإضافة. رجاء الانتظار.."
+
+msgid "Drama and Films"
+msgstr "دراما و أفلام"
 
 msgid "Drop unconfigured satellites"
 msgstr "الأقمار الصناعية المتصلة"
@@ -3710,6 +3716,9 @@ msgstr "شفافية كاملة"
 
 msgid "Full view resolution"
 msgstr "جميع أنواع الدقة"
+
+msgid "Fullbackup Images"
+msgstr "ضبط مؤالف التراجع"
 
 msgid "Function of OK button"
 msgstr "وظيفة زر موافق"
@@ -5225,7 +5234,7 @@ msgid "New Zealand"
 msgstr "نيوزلندا"
 
 msgid "News/Current Affairs/Social"
-msgstr "الاخبار/الشئون الحالية"
+msgstr "الأخبار/الشؤون الجارية/الاجتماعية"
 
 msgctxt "button label, 'next screen'"
 msgid "Next"
@@ -8031,9 +8040,6 @@ msgstr "كلمة المرور للبطاقة الذكية"
 msgid "Smooth"
 msgstr "ناعم"
 
-msgid "Social/Political/Economics"
-msgstr "اجتماعي/سياسي/اقتصادي"
-
 msgid "SocketMMI"
 msgstr "SocketMMI"
 
@@ -10174,7 +10180,7 @@ msgid "When enabled, the VCR scart option will be shown on the main menu"
 msgstr "عند التمكين، سيتم عرض خيار مدخل سكارت في القائمة الرئيسية"
 
 msgid "When enabled, the channel selection list will be hidden while listening to a radio channel. When disabled, the option 'Auto play last service in radio mode' is available."
-msgstr "عند التمكين ، سيتم إخفاء قائمة اختيار القنوات أثناء الاستماع إلى قناة راديو. عند التعطيل ، يتوفر خيار "التشغيل التلقائي لآخر خدمة في وضع الراديو"."
+msgstr "عند التمكين ، سيتم إخفاء قائمة اختيار القنوات أثناء الاستماع إلى قناة راديو. عند التعطيل ، يتوفر خيار التشغيل التلقائي لآخر خدمة في وضع الراديو"
 
 msgid "When enabled, the infobar will be displayed when a new event starts."
 msgstr "وإذا تم تعيين إلى 'نعم' على شريط المعلومات للظهور عندما يبدأ الحدث الجديد."
@@ -10584,8 +10590,8 @@ msgstr "!%s تم الانتقال إلى قناة المؤقت"
 msgid "Zgemma H.S/H.2S/H.2H/H5/H7(old model)"
 msgstr "Zgemma H.S/H.2S/H.2H/H5/H7(old model)"
 
-msgid "Zgemma H9(old model)/I55Plus"
-msgstr "Zgemma H9(old model)/I55Plus"
+msgid "Zgemma H9(old model)/I55Plus/H8"
+msgstr "Zgemma H9(old model)/I55Plus/H8"
 
 msgid "Zgemma Star S/2S/H1/H2"
 msgstr "Zgemma Star S/2S/H1/H2"
@@ -10629,8 +10635,8 @@ msgstr "الوقت الفعلي فقط"
 msgid "additional cable of rotor"
 msgstr "كابل إضافي للدوار"
 
-msgid "adult movie/drama"
-msgstr "فيلم الكبار/الدراما"
+msgid "adult movie"
+msgstr "فيلم للكبار"
 
 msgid "advanced"
 msgstr "متقدم"
@@ -10751,7 +10757,7 @@ msgid "chapters"
 msgstr "الفصول"
 
 msgid "childrens's youth program (general)"
-msgstr "برنامج الأطفال/الشباب (عام)"
+msgstr "برنامج الأطفال الشباب (عام)"
 
 msgid "circular left"
 msgstr "دائرى يسار"
@@ -10829,7 +10835,7 @@ msgid "economics/social advisory"
 msgstr "الاقتصاد/الاستشارات الاجتماعية"
 
 msgid "educational/science/factual topics (general)"
-msgstr "التعليم/العلوم/المواضيع الواقعية (عام)"
+msgstr "مواضيع تعليمية/علمية/واقعية (عامة)"
 
 msgid "embedded"
 msgstr "مدمج"
@@ -11107,7 +11113,7 @@ msgstr "تحرك للأعلى إلى المدخل الأول"
 msgid "move up to previous entry"
 msgstr "تحرك للأعلى المدخل السابق"
 
-msgid "movie/drama (general)"
+msgid "movie (general)"
 msgstr "فيلم/دراما (عام)"
 
 msgid "music/ballet/dance (general)"
@@ -11254,6 +11260,9 @@ msgstr "الثقافة الشعبية/الفنون التقليدية"
 msgid "pre-school children's program"
 msgstr "برنامج الأطفال قبل المدرسة"
 
+msgid "preserve bookmarks in cuts"
+msgstr "الحفاظ على الإشارات المرجعية في القطع"
+
 msgid "receiver software because updates are available."
 msgstr ".برنامج المتلقي لأن التحديثات متوفرة"
 
@@ -11332,7 +11341,7 @@ msgstr "أختار القائمة المدخلة"
 msgid "serious music/classic music"
 msgstr "موسيقى هادئه/موسيقى كلاسيكية"
 
-msgid "serious/classical/religious/historical movie/drama"
+msgid "serious/classical/religious/historical drama"
 msgstr "هادئه/الكلاسيكية/الدينية/التاريخية الفيلم/الدراما"
 
 msgid "service off-air"
@@ -11466,7 +11475,7 @@ msgid "talk show"
 msgstr "برنامج حواري"
 
 msgid "team sports/excluding football"
-msgstr "الرياضات الجماعية / باستثناء كرة القدم"
+msgstr "الرياضات الجماعية/باستثناء كرة القدم"
 
 msgid "technology/natural sciences"
 msgstr "التكنولوجيا/العلوم الطبيعية"
@@ -11515,9 +11524,6 @@ msgstr "قناة مجهولة"
 
 msgid "unknown service"
 msgstr "قناة مجهولة"
-
-msgid "unpublished"
-msgstr "غير منشورة"
 
 msgid "untestable"
 msgstr "تفعيل"
@@ -12091,4 +12097,3 @@ msgstr "متعدد"
 
 msgid "®"
 msgstr ""
-

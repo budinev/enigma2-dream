@@ -252,6 +252,15 @@ def InitUsageConfig():
 		config.usage.wakeup_day[i] = ConfigEnableDisable(default=False)
 		config.usage.wakeup_time[i] = ConfigClock(default=((6 * 60 + 0) * 60))
 
+	config.usage.poweroff_enabled = ConfigYesNo(default=False)
+	config.usage.poweroff_force = ConfigYesNo(default=False)
+	config.usage.poweroff_nextday = ConfigClock(default = ((6 * 60 + 0) * 60))
+	config.usage.poweroff_day = ConfigSubDict()
+	config.usage.poweroff_time = ConfigSubDict()
+	for i in range(7):
+		config.usage.poweroff_day[i] = ConfigEnableDisable(default=False)
+		config.usage.poweroff_time[i] = ConfigClock(default = ((1 * 60 + 0) * 60))
+
 	choicelist = [("0", _("Do nothing"))]
 	for i in range(3600, 21601, 3600):
 		h = abs(i / 3600)
@@ -377,6 +386,12 @@ def InitUsageConfig():
 	config.usage.remote_fallback_openwebif_password = ConfigPassword(default="default")
 	config.usage.remote_fallback_openwebif_port = ConfigInteger(default=80, limits=(0, 65535))
 	config.usage.remote_fallback_dvbt_region = ConfigText(default="fallback DVB-T/T2 Europe")
+
+	choicelist = [("0", _("Disabled"))]
+	for i in (10, 50, 100, 500, 1000, 2000):
+		choicelist.append(("%d" % i, _("%d ms") % i))
+
+	config.usage.http_startdelay = ConfigSelection(default="0", choices=choicelist)
 
 	config.usage.show_timer_conflict_warning = ConfigYesNo(default=True)
 
